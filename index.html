@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проект для собеседования</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <script src="./main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navigation">
+      <button class="burger">
+        Открыть меню
+      </button>
+      <ul class="navigation-list">
+        <li class="navigation-list__item"><a href="#top">Наверх</a></li>
+        <li class="navigation-list__item"><a href="#disciplines">Наши дисциплины</a></li>
+        <li class="navigation-list__item"><a href="#text">Немного текста</a></li>
+        <li class="navigation-list__item"><a href="#calculator">Калькулятор</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="first-block">
+      <h1 class="first-block__title">Проект для собеседования</h1>
+      <button class="first-block__button">Переход в никуда</button>
+    </section>
+    <section id="disciplines" class="second-block">
+      <h2 class="second-block__title">Наши дисциплины</h2>
+      <p>Наши преподаватели могут вести довольно много дисциплин, представим несколько из них с
+        коротким описанием</p>
+      <div class="card-wrapper">
+        <article class="card">
+          <figure>
+            <img src="./assets/card_1.png" alt="sketch logo">
+            <figcaption>
+              <h3>Скретч</h3>
+              <p>Подготовка к реальным языкам программирования с помощью блочного скриптинга</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="./assets/card_2.png" alt="html, css, js logos">
+            <figcaption>
+              <h3>Front-end</h3>
+              <p>Разработка сайтов с использование HTML,CSS и JavaScript</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="./assets/card_3.png" alt="puthon logo">
+            <figcaption>
+              <h3>Python</h3>
+              <p>Разработка программ с помощью языка Python, библиотека tkinter, изучение алгоритмов
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="./assets/card_4.png" alt="c++ logo">
+            <figcaption>
+              <h3>C++</h3>
+              <p>Работа с языком С++, консольные программы, библиотека SFML, изучение алгоритмов</p>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+    <section id="text" class="third-block">
+      <h2>Немного текста</h2>
+      <div class="third-block__content">
+        <div>
+          <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Placeat, dicta quia atque ab
+            libero nulla magnam. Fugiat asperiores vero necessitatibus quidem quis rem? Eum eaque
+            repudiandae, odit laboriosam iusto ex.</p>
+          <p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Error exercitationem quam
+            totam
+            illo dolores cupiditate voluptatibus ab, est unde veniam hic fugit. Necessitatibus,
+            quidem,
+            a possimus sapiente tenetur pariatur molestiae. Repellendus ad magni sit quibusdam.
+            Molestiae facilis, laborum doloremque exercitationem nobis consequuntur obcaecati
+            delectus
+            quos sunt maiores est consectetur autem qui. Nisi, nesciunt! Assumenda, error commodi
+            consequatur nesciunt, soluta rerum. Eaque, dolorem adipisci, hic quo earum illo
+            temporibus
+            nostrum quia officiis eos perferendis cumque laboriosam iste sit ad odit dolore,
+            aspernatur
+            atque veniam repudiandae itaque repellat sed maiores. Rem, eum.</p>
+        </div>
+        <img src="./assets/logo.png" alt="logo of school">
+      </div>
+    </section>
+    <section id="calculator" class="fourth-block">
+      <h2>Простенький калькулятор</h2>
+      <form class="calculator">
+        <input class="calculator__display" type="text" value="" disabled>
+        <button class="calculator__button" value="1">1</button>
+        <button class="calculator__button" value="2">2</button>
+        <button class="calculator__button" value="3">3</button>
+        <button class="calculator__button" value="4">4</button>
+        <button class="calculator__button" value="5">5</button>
+        <button class="calculator__button" value="6">6</button>
+        <button class="calculator__button" value="7">7</button>
+        <button class="calculator__button" value="8">8</button>
+        <button class="calculator__button" value="9">9</button>
+        <button class="calculator__button" value="0">0</button>
+        <button class="calculator__button" value="+">+</button>
+        <button class="calculator__button" value="-">-</button>
+        <button class="calculator__button" value="*">*</button>
+        <button class="calculator__button" value="/">/</button>
+        <button class="calculator__button" value="=">=</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>Детская онлайн-школа программирования HELLO WORLD</p>
+      <p>Отлично, на этом сайт готов)</p>
+    </div>
+  </footer>
+</body>
+
+</html>
