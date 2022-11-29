@@ -3,6 +3,8 @@
 const header = document.querySelector('.site-header');
 const calculator = document.querySelector('.calculator');
 const display = document.querySelector('.calculator__display');
+const navigation = document.querySelector('.navigation');
+const burger = document.querySelector('.burger');
 
 const handleClick = event => {
   const value = event.target.value;
@@ -38,3 +40,11 @@ window.onscroll = () => {
     header.classList.remove("header_scrolled");
   }
 }
+
+burger.addEventListener('click', e => {
+  e.stopPropagation();
+  navigation.classList.toggle('navigation_open');
+  navigation.classList.contains('navigation_open') ?
+    burger.innerHTML = 'Закрыть меню' :
+    burger.innerHTML = 'Открыть меню';
+});

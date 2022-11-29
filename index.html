@@ -19,21 +19,24 @@
 
 <body>
   <header class="site-header">
-    <nav>
+    <nav class="navigation">
+      <button class="burger">
+        Открыть меню
+      </button>
       <ul class="navigation-list">
-        <li class="navigation-list__item"><a href="">Наверх</a></li>
-        <li class="navigation-list__item"><a href="">Наши дисциплины</a></li>
-        <li class="navigation-list__item"><a href="">Немного текста</a></li>
-        <li class="navigation-list__item"><a href="">Калькулятор</a></li>
+        <li class="navigation-list__item"><a href="#top">Наверх</a></li>
+        <li class="navigation-list__item"><a href="#disciplines">Наши дисциплины</a></li>
+        <li class="navigation-list__item"><a href="#text">Немного текста</a></li>
+        <li class="navigation-list__item"><a href="#calculator">Калькулятор</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main id="top">
     <section class="first-block">
       <h1 class="first-block__title">Проект для собеседования</h1>
       <button class="first-block__button">Переход в никуда</button>
     </section>
-    <section class="second-block">
+    <section id="disciplines" class="second-block">
       <h2 class="second-block__title">Наши дисциплины</h2>
       <p>Наши преподаватели могут вести довольно много дисциплин, представим несколько из них с
         коротким описанием</p>
@@ -77,7 +80,7 @@
         </article>
       </div>
     </section>
-    <section class="third-block">
+    <section id="text" class="third-block">
       <h2>Немного текста</h2>
       <div class="third-block__content">
         <div>
@@ -101,7 +104,7 @@
         <img src="./assets/logo.png" alt="logo of school">
       </div>
     </section>
-    <section class="fourth-block">
+    <section id="calculator" class="fourth-block">
       <h2>Простенький калькулятор</h2>
       <form class="calculator">
         <input class="calculator__display" type="text" value="" disabled>
